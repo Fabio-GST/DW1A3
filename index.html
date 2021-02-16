@@ -11,11 +11,23 @@
 
 </head>
 
-<body class="w3-theme-l5">
+<body class="w3-theme-light">
     <section id="page">
         <header class="">
-                <!-- Sidebar (hidden by default) -->
-            <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left w3-round-xlarge w3-theme-d2" style="display:none;z-index:2;width:20%;min-width:150px; margin-left:  50px; margin-top: 50px" id="mySidebar">
+            <div class="" >
+                <div class="w3-xlarge w3-bar w3-theme-d2 w3-round-large" style="width:80%; margin-left: auto;margin-right: auto; height: 70px; margin-top: 20px; " >
+                    <div class="w3-bar-item w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+                    <div class="w3-bar-item w3-center "  ><a href="#index"> <img src="img/Topo MixCatolico.png" alt=""></a></div>
+                    <div class="w3-hide-small w3-right">
+                        <a href="https://www.facebook.com/" class="w3-bar-item w3-button w3-padding-16" ><i class="fa fa-facebook-official"></i></a>
+                        <a href="https://www.instagram.com/?hl=pt" class="w3-bar-item w3-button w3-padding-16" ><i class="fa fa-instagram"></i></a>
+                        <a href="https://twitter.com/home?lang=pt" class="w3-bar-item w3-button w3-padding-16" ><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/" class="w3-bar-item w3-button w3-padding-16" ><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar (hidden by default) -->
+            <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-animate-left w3-round-xlarge w3-theme-d2" style="display:none;z-index:2;width:20%;min-width:150px; margin-left:  50px; margin-top: 50px" id="mySidebar">
                 <a href="javascript:void(0)" onclick="w3_close()"
                 class="w3-bar-item w3-button">X</a>
                 <a href="https://mixcatolicobrasil.blogspot.com/2018/08/padre-dj-zeton.html" onclick="w3_close()" class="w3-bar-item w3-button">Agenda</a>
@@ -25,23 +37,10 @@
                 <a href="http://mixcatolicobrasil.blogspot.com/2018/08/mensagens-cruz.html" onclick="w3_close()" class="w3-bar-item w3-button">Mensagens</a>
                 <a href="https://mixcatolicobrasil.blogspot.com/2018/08/padre-dj-zeton.html" onclick="w3_close()" class="w3-bar-item w3-button">Orações</a>
             </nav>
-
-            <div class="" >
-                <div class="w3-xlarge w3-bar w3-theme-d2 w3-round-large" style="width:80%; margin-left: auto;margin-right: auto; height: 70px; margin-top: 20px; " >
-                    <div class="w3-bar-item w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-                    <div class="w3-bar-item w3-center "  ><a href="#home"> <img src="img/Topo MixCatolico.png" alt=""></a></div>
-                    <div class="w3-hide-small w3-right">
-                        <a href="https://www.facebook.com/" class="w3-bar-item w3-button w3-padding-16" ><i class="fa fa-facebook-official"></i></a>
-                        <a href="https://www.instagram.com/?hl=pt" class="w3-bar-item w3-button w3-padding-16" ><i class="fa fa-instagram"></i></a>
-                        <a href="https://twitter.com/home?lang=pt" class="w3-bar-item w3-button w3-padding-16" ><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/" class="w3-bar-item w3-button w3-padding-16" ><i class="fa fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
         </header>
         <main style="width:90%; margin-left: auto;margin-right: auto; height: 70px; margin-top: 50px; " >
             <!-- Slideshow-->
-            <div class="w3-content w3-display-container w3-round-large" style="margin-bottom: 50px; width: 100%;" >
+            <div class="w3-content w3-display-container w3-round-large w3-hide-small" style="margin-bottom: 50px; width: 100%;" >
                 <img class="mySlides" src="img/Cerco Jericó Padre Everton.jpg" style="width:100%">
                 <img class="mySlides" src="img/Filme Fátima.jpg" style="width:100%">
                 <img class="mySlides" src="img/Fórum 3 Setor.jpg" style="width:100%">
@@ -54,16 +53,12 @@
                     <button class="w3-button  w3-theme-d2" onclick="currentDiv(2)">2</button> 
                     <button class="w3-button  w3-theme-d2" onclick="currentDiv(3)">3</button> 
                 </div>
-                
             </div>
-
-
-
 
             <!-- Conteudo -->
             <div class="w3-row-padding w3-margin-top " >
                <a href="https://mixcatolicobrasil.blogspot.com/2020/05/divulgacao-gratuita-de-live-catolica.html" class="w3-hover-opacity " >
-                    <div class="w3-col s4 w3-container w3-margin-bottom w3-round-large w3-card " style="min-width: 300px;">
+                    <div class="w3-col s4 w3-container w3-margin-bottom w3-round-large w3-card w3-mobile" style="min-width: 300px;">
                         <img src="img/Live 2.jpg" alt="Norway" style="width:100% ; margin-top: 20px;" >
                         <div class="w3-container w3-theme-l5" style="height: 250px;">
                             <p><b>Divulgação gratuita de live </b></p>
@@ -72,7 +67,7 @@
                     </div>
                </a>
                <a href="https://mixcatolicobrasil.blogspot.com/2020/05/oracao-contra-covid.html" class="w3-hover-opacity ">
-                    <div class="w3-col s4 w3-container w3-margin-bottom w3-round-large w3-card "style="min-width: 300px;">
+                    <div class="w3-col s4 w3-container w3-margin-bottom w3-round-large w3-card  w3-mobile"style="min-width: 300px;">
                         <img src="img/Capa Covid 2020.jpg" alt="Norway" style="width:100% ; margin-top: 20px;" >
                         <div class="w3-container w3-theme-l5" style="height: 250px;">
                             <p><b>Divulgação gratuita de live </b></p>
@@ -81,7 +76,7 @@
                     </div>
                 </a>
                 <a href="https://mixcatolicobrasil.blogspot.com/2020/05/divulgacao-gratuita-de-live-catolica.html" class="w3-hover-opacity " >
-                    <div class="w3-col s4 w3-container w3-margin-bottom w3-round-large w3-card " style="min-width: 300px;">
+                    <div class="w3-col s4 w3-container w3-margin-bottom w3-round-large w3-card w3-mobile" style="min-width: 300px;">
                         <img src="img/Live 2.jpg" alt="Norway" style="width:100% ; margin-top: 20px;" >
                         <div class="w3-container w3-theme-l5" style="height: 250px;">
                             <p><b>Divulgação gratuita de live </b></p>
@@ -92,7 +87,7 @@
             </div>
             <div class="w3-row-padding w3-margin-top " >
                 <a href="https://mixcatolicobrasil.blogspot.com/2020/05/oracao-contra-covid.html" class="w3-hover-opacity " >
-                     <div class=" w3-col s4 w3-container w3-margin-bottom w3-round-large w3-card" style="min-width: 300px;">
+                     <div class=" w3-col s4 w3-container w3-margin-bottom w3-round-large w3-card w3-mobile" style="min-width: 300px;">
                          <img src="img/Live 2.jpg" alt="Norway" style="width:100% ; margin-top: 20px;" >
                          <div class="w3-container w3-theme-l5" style="height: 250px;">
                              <p><b>Divulgação gratuita de live </b></p>
@@ -101,7 +96,7 @@
                      </div>
                 </a>
                 <a href="https://mixcatolicobrasil.blogspot.com/2020/05/divulgacao-gratuita-de-live-catolica.html" class="w3-hover-opacity ">
-                     <div class="w3-col s4 w3-container w3-margin-bottom w3-round-large w3-card "style="min-width: 300px;">
+                     <div class="w3-col s4 w3-container w3-margin-bottom w3-round-large w3-card w3-mobile"style="min-width: 300px;">
                          <img src="img/Capa Covid 2020.jpg" alt="Norway" style="width:100%  ; margin-top: 20px;" >
                          <div class="w3-container w3-theme-l5" style="height: 250px;">
                              <p><b>Divulgação gratuita de live </b></p>
@@ -110,7 +105,7 @@
                      </div>
                  </a>
                  <a href="https://mixcatolicobrasil.blogspot.com/2020/05/divulgacao-gratuita-de-live-catolica.html" class="w3-hover-opacity " >
-                     <div class="w3-col s4 w3-container w3-margin-bottom w3-round-large w3-card " style="min-width: 300px;">
+                     <div class="w3-col s4 w3-container w3-margin-bottom w3-round-large w3-card w3-mobile" style="min-width: 300px;">
                          <img src="img/Live 2.jpg" alt="Norway" style="width:100% ; margin-top: 20px;" >
                          <div class="w3-container w3-theme-l5" style="height: 250px;">
                              <p><b>Divulgação gratuita de live </b></p>
@@ -194,7 +189,6 @@
 
 .w3-hover-theme:hover {color:#fff !important; background-color:#800000 !important}
 .w3-hover-text-theme:hover {color:#800000 !important}
-.w3-hover-border-theme:hover {border-color:#800000 !important}
-    
-    </style>
+.w3-hover-border-theme:hover {border-color:#800000 !important}  
+</style>
 </html>
